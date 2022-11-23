@@ -1,0 +1,110 @@
+% Created 2022-11-23 Wed 11:44
+% Intended LaTeX compiler: xelatex
+\RequirePackage{fix-cm}
+        \PassOptionsToPackage{svgnames}{xcolor}
+        \documentclass[11pt]{article}
+        \usepackage{fontspec}
+        \setmainfont{ETBembo}
+        \usepackage{sectsty}
+        \allsectionsfont{\sffamily}
+        \usepackage{enumitem}
+        \setlist[description]{style=unboxed,font=\sffamily\bfseries}
+        \usepackage{listings}
+        \lstset{frame=single,aboveskip=1em,
+          framesep=.5em,backgroundcolor=\color{AliceBlue},
+          rulecolor=\color{LightSteelBlue},framerule=1pt}
+        \usepackage{xcolor}
+        \newcommand\basicdefault[1]{\scriptsize\color{Black}\ttfamily#1}
+        \lstset{basicstyle=\basicdefault{\spaceskip1em}}
+        \lstset{literate=
+                 {§}{{\S}}1
+                 {©}{{\raisebox{.125ex}{\copyright}\enspace}}1
+                 {«}{{\guillemotleft}}1
+                 {»}{{\guillemotright}}1
+                 {Á}{{\'A}}1
+                 {Ä}{{\"A}}1
+                 {É}{{\'E}}1
+                 {Í}{{\'I}}1
+                 {Ó}{{\'O}}1
+                 {Ö}{{\"O}}1
+                 {Ú}{{\'U}}1
+                 {Ü}{{\"U}}1
+                 {ß}{{\ss}}2
+                 {à}{{\`a}}1
+                 {á}{{\'a}}1
+                 {ä}{{\"a}}1
+                 {é}{{\'e}}1
+                 {í}{{\'i}}1
+                 {ó}{{\'o}}1
+                 {ö}{{\"o}}1
+                 {ú}{{\'u}}1
+                 {ü}{{\"u}}1
+                 {¹}{{\textsuperscript1}}1
+                  {²}{{\textsuperscript2}}1
+                  {³}{{\textsuperscript3}}1
+                 {ı}{{\i}}1
+                 {—}{{---}}1
+                 {’}{{'}}1
+                 {…}{{\dots}}1
+                    {⮠}{{$\hookleftarrow$}}1
+                 {␣}{{\textvisiblespace}}1,
+                 keywordstyle=\color{DarkGreen}\bfseries,
+                 identifierstyle=\color{DarkRed},
+                 commentstyle=\color{Gray}\upshape,
+                 stringstyle=\color{DarkBlue}\upshape,
+                 emphstyle=\color{Chocolate}\upshape,
+                 showstringspaces=false,
+                 columns=fullflexible,
+                 keepspaces=true}
+        \usepackage[a4paper,margin=1in,left=1.5in]{geometry}
+        \usepackage{parskip}
+        \makeatletter
+        \renewcommand{\maketitle}{%
+          \begingroup\parindent0pt
+          \sffamily
+          \Huge{\bfseries\@title}\par\bigskip
+          \LARGE{\bfseries\@author}\par\medskip
+          \normalsize\@date\par\bigskip
+          \endgroup\@afterindentfalse\@afterheading}
+        \makeatother
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+        \hypersetup{linkcolor=Blue,urlcolor=DarkBlue,
+          citecolor=DarkRed,colorlinks=true}
+        \AtBeginDocument{\renewcommand{\UrlFont}{\ttfamily}}
+                \usepackage{tikz}
+\usepackage{geometry}
+\date{\today}
+\title{Loiuse Manhoo}
+\hypersetup{
+ pdfauthor={Kevo ``Piedmont'' Akimbo},
+ pdftitle={Loiuse Manhoo},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.1 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \node at (current page.center) {\fbox{\includegraphics[width=\pdfpagewidth,height=\pdfpageheight]{cover-final.png}}};
+\end{tikzpicture}
+\clearpage
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \node at (current page.center) {\fbox{\includegraphics[width=\pdfpagewidth,height=\pdfpageheight]{2nd-page.png}}};
+\end{tikzpicture}
+\clearpage
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\end{document}
