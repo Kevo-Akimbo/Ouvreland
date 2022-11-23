@@ -1,6 +1,6 @@
 {
 
-  description = "The story of Operaland told through Emacs Org Files";
+  description = "The story of Ouvreland told through Emacs Org Files";
   inputs = {
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
