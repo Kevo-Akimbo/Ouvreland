@@ -22,3 +22,6 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 .direnv
+./louise-manhoo/index.pdf 
+./louise-manhoo/index.synctex.gz 
+./louise-manhoo/index.tex
